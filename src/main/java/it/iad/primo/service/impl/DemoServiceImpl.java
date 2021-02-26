@@ -13,4 +13,10 @@ public class DemoServiceImpl implements DemoService {
         return LocalDateTime.now();
     }
 
+    @Override
+    public double moltiplica(double num) {
+        System.out.println("Siamo nel servizio moltiplica");
+        return num * 2;
+    }
+
 }
