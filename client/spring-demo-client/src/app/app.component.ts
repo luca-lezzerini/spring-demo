@@ -26,7 +26,8 @@ export class AppComponent {
     let dto: DtoNumero = new DtoNumero();
     dto.numero = this.numero;
     let oss: Observable<DtoNumero> = this.http
-      .post<DtoNumero>('http://localhost:8080/moltiplica', dto);
+      .post<DtoNumero>('http://localhost:8080/moltiplica', 
+      dto);
     oss.subscribe(d => this.risultato = d.numero);
   }
 }
